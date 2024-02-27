@@ -1,3 +1,4 @@
+import {numberWithCommas} from "../../utils/utils.js"
 import * as cardTitle from "./cardTitle/index.js"
 import * as cardInfo from "./CardInfo/index.js"
 
@@ -7,7 +8,7 @@ export function create({nozzle, lts, qtd}) {
     let cardInfoLts = cardInfo.create(
         {
             description: "Total abastecido",
-            information: lts
+            information: numberWithCommas(lts)
         }
     );
     let cardInfoQtd = cardInfo.create(
