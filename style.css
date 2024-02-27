@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: clamp(40%, 1% + 2vw, 62.5%);
+
+    --bg-color: #fafafa;
+
+    --card-bg-color: #fff;
+    --card-border-color: #a1a1aa;
+
+    --aliatto-blue: #113E69;
+    --aliatto-green: #91C746;
+}
+
+body, button {
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+
+    background-color: var(--bg-color);
+
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    gap: 2.4rem;
+}
+
+/* CARD AREA  */
+#card-area {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 2rem;
+}
+
+/* GAS PUMP CARD */
+.gas-pump-card {
+    width: fit-content;
+    padding: 2.4rem;
+    border: 1px solid var(--card-border-color);
+    border-radius: .8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+
+    background-color: #fff;
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    padding-bottom: .8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+}
+
+.card-title h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+}
+
+i {
+    font-size: 5.2rem;
+    color: var(--aliatto-blue);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+
+.card-info h3 {
+    font-size: 1.6rem;
+    color: rgba(0, 0, 0, .7);
+    font-weight: 600;
+}
+
+.card-info p {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
