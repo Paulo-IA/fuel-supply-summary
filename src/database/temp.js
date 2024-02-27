@@ -1,4 +1,8 @@
 export const data = { 
+    day: "17-02-2024",
+    difference: 1162,
+    nozzlesVolumeArray: [8, 9, 2, 7, 0, 5, 1, 3, 4, 6, 10, 11, 13, 12],
+    nozzlesVolumeArrayNotNull: [8, 9, 2, 7, 0, 5, 1, 3, 4, 6, 10, 11],
     nozzles: [
         { nozzle: 1, lts: 78868,  qtd: 8 },
         { nozzle: 2, lts: 64641,  qtd: 7 },

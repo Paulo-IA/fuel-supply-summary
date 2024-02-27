@@ -1,4 +1,4 @@
-import * as CardArea from "./Components/CardArea/index.js";
-import { data } from "./database/temp.js"
+import * as App from './Components/App.js'
+import {data} from './database/temp.js'
 
-CardArea.create(data.nozzles)
+App.start(data)
