@@ -9,12 +9,11 @@ export function create(data) {
 
     const differenceComponent = cardInfo.create(
         {
-            description: "diferença",
-            information: data.difference
+            description: "Diferença",
+            information: data.difference,
+            informationColor: data.difference < 0 ? true : '' // not working
         }
     )
-
-    // fazer numero ficar vermelho
 
     header.appendChild(date)
     header.appendChild(differenceComponent)

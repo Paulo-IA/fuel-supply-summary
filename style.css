@@ -54,11 +54,13 @@ header {
     justify-content: space-between;
 }
 
+header .card-info {
+    align-items: end;
+}
 header .card-info p {
     color: var(--green);
 }
-
-.negative {
+#negative {
     color: var(--red)
 }
 
