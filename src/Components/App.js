@@ -1,12 +1,12 @@
-import * as CardArea from "./CardArea/index.js";
 import * as Header from "./Header/index.js"
+import * as Screen from "./Screen/index.js"
 
 const app = document.getElementById('app')
 
 export function App(data) {
     let header = Header.create(data);
-    let cardArea = CardArea.create(data.nozzles)
+    let screen = Screen.create()
 
     app.appendChild(header)
-    // app.appendChild(cardArea)
+    app.appendChild(screen)
 }
