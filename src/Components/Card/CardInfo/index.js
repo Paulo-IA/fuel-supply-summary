@@ -1,4 +1,4 @@
-import * as textComponent from "../../TextComponent/textComponent.js"
+import * as textComponent from "../../TextComponent/index.js"
 
 export function create({ description, information }) {
     let cardInfo = document.createElement('section')

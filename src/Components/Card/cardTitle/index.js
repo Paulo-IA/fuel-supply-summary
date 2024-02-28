@@ -1,5 +1,5 @@
 import * as gasPumpIcon from "./gasPumpIcon.js"
-import * as textComponent from "../../TextComponent/textComponent.js"
+import * as textComponent from "../../TextComponent/index.js"
 
 export function create(titleContent) {
     titleContent = `bico ${String(titleContent).padStart(2, '0')}`
