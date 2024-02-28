@@ -11,7 +11,7 @@ export function create(data) {
         {
             description: "Diferença",
             information: data.difference,
-            informationColor: data.difference < 0 ? true : '' // not working
+            informationColor: data.difference < 0
         }
     )
 

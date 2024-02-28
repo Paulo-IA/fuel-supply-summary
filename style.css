@@ -7,7 +7,9 @@
 :root {
     font-size: clamp(40%, 1% + 2vw, 62.5%);
 
-    --bg-color: #fafafa;
+    --bg-color: #fafaf9;
+
+    --wrapper-bg-color: #fafafa;
 
     --card-bg-color: #fff;
     --card-border-color: #a1a1aa;
@@ -127,4 +129,61 @@ header .card-info p {
 .card-info p {
     font-size: 2.4rem;
     font-weight: 600;
+}
+
+/* SCREEN WRAPPER */
+#screen-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#screen-navigation {
+    display: flex;
+    gap: .8rem;
+
+    background-color: var(--bg-color);
+    border-radius: .8rem .8rem 0 0;
+}
+
+#screen-navigation button {
+    padding: .8rem;
+    font-weight: 500;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+}
+
+#screen-navigation button:hover {
+    background-color: rgba(0, 0, 0, .1);
+    border-radius: .8rem .8rem 0 0;
+}
+
+button#selected {
+    background-color: #fff;
+    border: 1px solid var(--card-border-color);
+    border-bottom: 0;
+    border-radius: .8rem .8rem 0 0;
+
+    pointer-events: none;
+    position: relative;
+}
+
+button#selected::after {
+    content: '';
+    background-color: #fff;
+    height: 10px;
+    display: block;
+    position: absolute;
+    bottom: -10;
+    right: 0;
+    left: 0;
+}
+
+#screen-content {
+    border: 1px solid var(--card-border-color);
+    border-radius: 0 .8rem .8rem .8rem;
+    
+    background-color: #fff;
+
+    padding: 2rem;
 }

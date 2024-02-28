@@ -1,6 +1,6 @@
 export const data = { 
     date: "17-02-2024",
-    difference: 1162,
+    difference: -1162,
     nozzlesVolumeArray: [8, 9, 2, 7, 0, 5, 1, 3, 4, 6, 10, 11, 13, 12],
     nozzles: [
         { nozzle: 1, lts: 78868,  qtd: 8 },

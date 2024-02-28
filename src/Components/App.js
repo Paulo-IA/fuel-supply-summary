@@ -8,5 +8,5 @@ export function App(data) {
     let cardArea = CardArea.create(data.nozzles)
 
     app.appendChild(header)
-    app.appendChild(cardArea)
+    // app.appendChild(cardArea)
 }
