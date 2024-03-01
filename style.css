@@ -146,11 +146,14 @@ header .card-info p {
 }
 
 #screen-navigation button {
+    width: 23rem;
     padding: .8rem;
-    font-weight: 500;
+    font-size: 1.6rem;
+    font-weight: 700;
     background: transparent;
     border: 0;
     cursor: pointer;
+    outline: none;
 }
 
 #screen-navigation button:hover {

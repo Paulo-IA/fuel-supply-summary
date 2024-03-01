@@ -4,10 +4,12 @@ export function create() {
     const screenNavigation = document.createElement('nav')
     const buttonNozzles = Button.create({
         content: "Bicos",
-        id: "selected"
+        id: "selected",
+        action: "showNozzles"
     })
     const buttonNozzlesOrdered = Button.create({
-        content: "Bicos Ordenados"
+        content: "Bicos Ordenados",
+        action: "showNozzlesOrdered"
     })
     
     screenNavigation.setAttribute('id', 'screen-navigation')
