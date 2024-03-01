@@ -4,11 +4,13 @@ export function create() {
     const screenNavigation = document.createElement('nav')
     const buttonNozzles = Button.create({
         content: "Bicos",
-        id: "selected",
+        id: "nozzles",
+        classList: 'selected',
         action: "showNozzles"
     })
     const buttonNozzlesOrdered = Button.create({
         content: "Bicos Ordenados",
+        id: "nozzlesOrdered",
         action: "showNozzlesOrdered"
     })
     

@@ -161,7 +161,7 @@ header .card-info p {
     border-radius: .8rem .8rem 0 0;
 }
 
-button#selected {
+#screen-navigation button.selected {
     background-color: #fff;
     border: 1px solid var(--card-border-color);
     border-bottom: 0;
@@ -171,11 +171,11 @@ button#selected {
     position: relative;
 }
 
-button#selected:hover {
+button.selected:hover {
     background-color: #fff;
 }
 
-button#selected::after {
+button.selected::after {
     content: '';
     background-color: #fff;
     height: 10px;
@@ -193,4 +193,8 @@ button#selected::after {
     background-color: #fff;
 
     padding: 2rem;
+}
+
+#screen-content.rounded-corner {
+    border-radius: .8rem;
 }
