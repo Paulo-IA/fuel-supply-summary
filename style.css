@@ -167,8 +167,12 @@ button#selected {
     border-bottom: 0;
     border-radius: .8rem .8rem 0 0;
 
-    pointer-events: none;
+    cursor:default;
     position: relative;
+}
+
+button#selected:hover {
+    background-color: #fff;
 }
 
 button#selected::after {

@@ -7,6 +7,9 @@ export function App(data) {
     let header = Header.create(data);
     let screen = Screen.create(data.nozzles)
 
+    
     app.appendChild(header)
     app.appendChild(screen)
+    
+    Screen.registerTabs()
 }
